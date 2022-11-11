@@ -29,8 +29,13 @@ class HomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Expanded(
+            flex: 2,
             child: Container(
-                color: Colors.orange,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 107, 209, 18),
+                  borderRadius: BorderRadius.circular(50),
+                ),
+                // color: Colors.orange,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -65,6 +70,7 @@ class HomeScreen extends StatelessWidget {
                 )),
           ),
           Expanded(
+            flex: 4,
             child: Container(
                 color: Colors.yellow,
                 child: Column(
